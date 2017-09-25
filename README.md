@@ -4,11 +4,34 @@ Simpol is a minimal, clean, and open source Jekyll theme for Github Pages.
 
 >### Focus on the writing, the content.
 
-## Get the Theme
+![Screenshot](https://raw.githubusercontent.com/scottmathson/simpol-theme/master/simpol-theme-screenshot.jpg)
 
-<https://gum.co/simpol>
+- [Install the theme](#installation)
+- [Current features](#current-features)
+- [Credits](#credits)
+- [Resources](#resources)
 
-### Current Features in v1.0.0
+## Installation
+
+### As a Fork
+
+1. [Fork the repo](https://github.com/scottmathson/simpol-theme#fork-destination-box)
+2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
+3. Delete the `simpol-theme-screenshot.jpg` file
+4. Install bundler with `$ gem install bundler`
+5. Install gems with `$ bundle install`
+6. Run Jekyll with `$ bundle exec jekyll serve`
+7. Have fun!
+
+### As a Jekyll theme gem
+
+1. Download the theme, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/scottmathson/simpol-theme/tree/master/)
+2. Install bundler with `$ gem install bundler`
+3. Install gems with `$ bundle install`
+4. Run Jekyll with `$ bundle exec jekyll serve`
+5. Have fun!
+
+## Current Features
 
 * Minimal design and feel.
 * Simple and customizable Navigation, Index, and Footer
@@ -23,7 +46,7 @@ Simpol is a minimal, clean, and open source Jekyll theme for Github Pages.
 * Single, yet powerful and light-weight CSS Stylesheet
 * **Simple, like a website should be.**
 
-### Credits
+## Credits
 
 Simpol Theme is designed, developed, and maintained by Scott Mathson, Mathson Design Co.
 
@@ -31,9 +54,7 @@ The clean design and feel is inspired by other minimal themes and blogs out ther
 
 [Scott on GitHub](https://github.com/scottmathson) | [Scott on Twitter](https://twitter.com/scottmathson)
 
----
-
-### Resources
+## Resources
 
 Check out these blog posts for help in getting started blogging with Simpol Theme. Within the posts are even more resources to help you.
 
@@ -43,6 +64,8 @@ Check out these blog posts for help in getting started blogging with Simpol Them
 
 
 ---
+
+## License
 
 Copyright (c) 2017 Mathson Design, LLC and Scott Mathson
 
