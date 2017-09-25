@@ -25,6 +25,12 @@ Simpol is a minimal, clean, and open source Jekyll theme for Github Pages.
 
 ### As a Jekyll theme gem
 
+[![Gem Version](https://badge.fury.io/rb/simpol-jekyll-theme.svg)](https://badge.fury.io/rb/simpol-jekyll-theme)
+
+Simply run `gem install simpol-jekyll-theme` to download the latest Gem
+
+Or:
+
 1. Download the theme, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/scottmathson/simpol-theme/tree/master/)
 2. Install bundler with `$ gem install bundler`
 3. Install gems with `$ bundle install`
