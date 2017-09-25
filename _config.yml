@@ -1,0 +1,76 @@
+# Site settings
+  # Note: after inputting your content, you may need to stop and restart jekyll server for changes to take effect.
+  # When filling this file in, below, be sure to DELETE the "#" comments - example, greeting should look like - greeting: Hello, I'm Simpol.
+
+#content for nav.html
+title: Simpol Theme
+subtitle: Focus on the writing, the content.
+
+#content for index.html
+  #Add your own info, deleting the comments "#". This data automatically writes to the Index page's mini, about section.
+greeting: #GREETING_GOES_HERE | default: Hello, I'm Simpol.
+logo_img: #LOGO_IMG_SRC_GOES_HERE | default: /assets/img/simpol-theme-square-writing-logo.png
+subgreeting_one: #SUBGREETING_ONE_GOES_HERE
+subgreeting_two: #SUBGREETING_TWO_GOES_HERE
+
+# Again: after inputting your content, you may need to stop and restart jekyll server for changes to take effect.
+
+#content for nav.html (shown on desktop) navigation links
+nav_link_one_name: #NAV_NAME_GOES_HERE
+nav_link_one_link: #NAV_LINK_GOES_HERE
+
+nav_link_two_name: Categories
+nav_link_two_link: "/categories"
+
+nav_link_three_name: #NAV_NAME_GOES_HERE
+nav_link_three_link: #NAV_LINK_GOES_HERE
+
+#content for footer.html (shown on mobile) footer navigation links
+footer_link_one_name: #FOOTER_NAME_GOES_HERE
+footer_link_one_link: #FOOTER_LINK_GOES_HERE
+
+footer_link_two_name: Categories
+footer_link_two_link: "/categories"
+
+footer_link_three_name: #FOOTER_NAME_GOES_HERE
+footer_link_three_link: #FOOTER_LINK_GOES_HERE
+
+baseurl: ""
+google_tracking_id: #deletme-Google Analytics Tracking ID- UA-XXXXXXXX-X
+copyright_name: Mathson Design, LLC
+
+# SEO data (https://github.com/jekyll/jekyll-seo-tag)
+logo: /assets/img/simpol-favicon.png
+description: Simpol Theme is a clean, minimal website theme all about the writing, the content. Currently available for Jekyll. Perfect for blogging.
+author:
+  name: Simpol Theme
+  email: simpol@scottmathson.com
+  twitter: simpoltheme
+
+social:
+  name: Simpol Theme
+  links:
+    - https://twitter.com/simpoltheme
+    - https://github.com/simpol-theme
+
+# Build settings
+permalink: pretty
+paginate: 12
+
+defaults:
+  -
+    scope:
+      path: "assets/img"
+    values:
+      image: true
+
+gems:
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-feed
+- jekyll-paginate
+exclude:
+- Gemfile
+- Gemfile.lock
+- package.json
+- README.md

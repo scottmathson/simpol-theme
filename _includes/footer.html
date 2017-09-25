@@ -1,0 +1,13 @@
+<footer>
+	<p class="smaller mobile-only-show">
+		{% if site.footer_link_one_link %}<a href="{{ site.footer_link_one_link }}">{% else %}<a href="{{ "https://github.com/simpol-theme/simpol-theme-jekyll#readme" }}">{% endif %}
+		{% if site.footer_link_one_name %}{{ site.footer_link_one_name }}</a>{% else %}{{ "Setup links in _config.yml" }}</a>{% endif %}
+		&bull;
+		{% if site.footer_link_two_link %}<a href="{{ site.footer_link_two_link }}">{% else %}<a href="{{ "#" }}">{% endif %}
+		{% if site.footer_link_two_name %}{{ site.footer_link_two_name }}</a>{% else %}{{ "x" }}</a>{% endif %}
+		&bull;
+		{% if site.footer_link_three_link %}<a href="{{ site.footer_link_three_link }}">{% else %}<a href="{{ "#" }}">{% endif %}
+		{% if site.footer_link_three_name %}{{ site.footer_link_three_name }}</a>{% else %}{{ "x" }}</a>{% endif %}
+	</p>
+	<p class="inline-block">&copy; {% if site.copyright_name %}{{ site.copyright_name }}{% else %}{{ "Mathson Design, LLC" }}{% endif %} &bull; <a href="https://simpoltheme.com?utm_source=theme&amp;utm_medium=website-footer" rel="nofollow" target="_blank" title="Minimal, free, and open source Jekyll Theme">Simpol Theme</a></p>
+</footer>

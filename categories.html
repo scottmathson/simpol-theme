@@ -1,0 +1,19 @@
+---
+layout: page
+title: Post categories - Archive
+description: Blog categories for this website.
+---
+
+<h1>Post categories</h1>
+
+<hr>
+
+{% for category in site.categories %}
+	<h2>{{ category[0] }}:</h2>
+	<div class="post-preview">
+		{% for post in category[1] %}
+			<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+			<p>&mdash; {{ post.description }} <a href="{{ post.url }}">Read more</a></p>
+		{% endfor %}
+	</div><!-- end .post-preview -->
+{% endfor %}

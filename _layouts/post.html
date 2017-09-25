@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="page-wrapper">
+  <!-- Post Header -->
+	<h1>{{ page.title }}</h1>
+	<p class="mono smaller">Published on {{ page.date | date: "%B %-d, %Y" }} By {{ page.author }} &mdash; <a href="{{ site.baseurl }}/categories">{{ page.categories }}</a>
+	</p>
+	<hr>
+
+  <!-- Post Content -->
+  <article>
+	  {{ content }}
+		<div class="social-sharing inline-block">
+		{% assign share_url = page.url | absolute_url %}
+			<a href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text=Check%20this%20out%20-%20site%20theme%20by%20@simpoltheme%20(@scottmathson)" target="_blank">{% include social-icons.html icon="Twitter" %}</a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank">{% include social-icons.html icon="Facebook" %}</a>
+			<a href="mailto:?subject=Check%20this%20out&amp;body=Check%20this%20out%20-%20site%20theme%20by%20@simpoltheme:%20{{ share_url }}">{% include social-icons.html icon="Email" %}</a>
+		</div>
+    <div class="pager">
+      {% if page.previous.url %}
+        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{page.previous.title}}">
+					<button class="btn-primary">&larr; Previous Post</button>
+				</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{page.next.title}}">
+					<button class="btn-primary">Next Post &rarr;</button>
+				</a>
+      {% endif %}
+    </div><!-- end .pager -->
+  </article>
+</div><!-- end .page-wrapper -->

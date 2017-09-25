@@ -1,0 +1,74 @@
+---
+layout: page
+---
+
+<div class="page-wrapper">
+	<div class="inner-wrapper" id="mini-about">
+		<div class="top-headline-photo">
+			<div class="sm-1-col md-2-col lg-2-col pull-left">
+				<h1>{% if site.greeting %}{{ site.greeting }}{% else %}{{ "Hello, I'm Simpol." }}{% endif %}
+				</h1>
+			</div><!-- end .sm-1-col lg-2-col pull-left -->
+			<div class="sm-1-col md-2-col lg-2-col pull-right small-mobile-hide">
+				{% if site.logo_img %}<img src="{{ site.baseurl }}{{ site.logo_img }}" alt="{{ site.title }}">
+				{% else %}<img src="{{ site.baseurl }}/assets/img/simpol-theme-square-writing-logo.png" alt="Simpol Theme Index Logo">{% endif %}
+			</div><!-- end. sm-1-col lg-2-col pull-right mobile-hide -->
+		</div><!-- end .top-headline-photo -->
+
+		<div class="sm-1-col md-2-col lg-2-col pull-left">
+			<p>{% if site.subgreeting_one %}{{ site.subgreeting_one }}{% else %}{{ "Jekyll theme that's all about the content." }}{% endif %}
+			</p>
+		</div><!-- end .sm-1-col lg-2-col pull-left -->
+		<div class="sm-1-col md-2-col lg-2-col pull-right">
+			<p>{% if site.subgreeting_two %}{{ site.subgreeting_two }}{% else %}{{ "Minimal, clean, simple blogging." }}{% endif %}
+			</p>
+		</div><!-- end. sm-1-col lg-2-col pull-right -->
+	</div><!-- end .inner-wrapper #mini-about -->
+
+	<hr>
+
+	<div class="inner-wrapper">
+		<br>
+		{% for post in paginator.posts %}
+		<div class="post-preview">
+			<div class="sm-1-col lg-onequarter-col pull-left">
+				{% if post.header-img %}
+					<a href="{{ post.url | prepend: site.baseurl }}" style="text-decoration:none;">
+						<img class="post-header-img" src="{{ site.baseurl }}/{{ post.header-img }}" alt="Simpol Theme">
+					</a>
+				{% endif %}
+			</div><!-- end .sm-1-col lg-onequarter-col pull-left -->
+			<div class="sm-1-col lg-threequarter-col inline-block">
+				<a href="{{ post.url | prepend: site.baseurl }}">
+					<h2>{{ post.title }}</h2>
+				</a>
+				{% if post.description %}
+					<h4>{{ post.description }}</h4>
+				{% endif %}
+				<div class="sm-1-col lg-2-col pull-left">
+					<p class="mono smaller">Published on {{ post.date | date: "%B %-d, %Y" }}
+						<br>
+						By {{ post.author }}
+					</p>
+				</div><!-- end .sm-1-col lg-2-col pull-left -->
+				<div class="sm-1-col lg-2-col inline-block">
+					<a href="{{ post.url | prepend: site.baseurl }}">
+						<p class="post-cta btn-primary">Read more</p>
+					</a>
+				</div><!-- end .sm-1-col lg-1-col inline-block -->
+			</div><!-- end .sm-1-col lg-threequarter-col inline-block -->
+		</div><!-- end .post-preview -->
+		{% endfor %}
+
+		{% if paginator.total_pages > 1 %}
+		<div class="pager">
+	    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous btn-primary">&larr; Newer Posts</a>
+	    {% endif %}
+	    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn-primary">Older Posts &rarr;</a>
+	    {% endif %}
+		</div><!-- end .pager -->
+		{% endif %}
+	</div><!-- end .inner-wrapper -->
+</div><!-- end .page-wrapper -->
