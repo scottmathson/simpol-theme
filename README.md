@@ -17,10 +17,10 @@ Simpol is a minimal, clean, and open source Jekyll theme for Github Pages.
 
 1. [Fork the repo](https://github.com/scottmathson/simpol-theme#fork-destination-box)
 2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
-4. Install bundler with `$ gem install bundler`
-5. Install gems with `$ bundle install`
-6. Run Jekyll with `$ bundle exec jekyll serve`
-7. Have fun!
+3. Install bundler with `$ gem install bundler`
+4. Install gems with `$ bundle install`
+5. Run Jekyll with `$ bundle exec jekyll serve`
+6. Have fun!
 
 ### As a Jekyll theme gem
 
