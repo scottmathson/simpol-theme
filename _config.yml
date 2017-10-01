@@ -74,3 +74,4 @@ exclude:
 - Gemfile.lock
 - package.json
 - README.md
+- vendor
