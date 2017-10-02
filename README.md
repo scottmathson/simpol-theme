@@ -48,7 +48,7 @@ simpol-theme |             Source: /srv/jekyll
 simpol-theme |        Destination: /srv/jekyll/_site
 simpol-theme |  Incremental build: enabled
 simpol-theme |       Generating...
-simpol-theme |                     done in 0.22 seconds.
+simpol-theme |                     done in x.xxx seconds.
 simpol-theme |  Auto-regeneration: enabled for '/srv/jekyll'
 simpol-theme |     Server address: http://0.0.0.0:4000/
 simpol-theme |   Server running... press ctrl-c to stop.
