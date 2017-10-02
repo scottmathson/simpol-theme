@@ -38,6 +38,8 @@ Or:
 
 ### Using Docker
 
+- Docker Installation guide can be found here: https://docs.docker.com/engine/installation
+
 You can start the site by browsing to project directory and running `docker-compose up`. You should see the following:
 
 ```bash
