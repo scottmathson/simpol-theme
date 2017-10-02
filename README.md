@@ -6,7 +6,7 @@ Simpol is a minimal, clean, and open source Jekyll theme for Github Pages.
 
 ![Screenshot](https://user-images.githubusercontent.com/178448/31042735-75abfb14-a563-11e7-9a32-d8f76384c90f.jpg)
 
-- [Install the theme](#installation)
+- [Installation](#installation)
 - [Current features](#current-features)
 - [Credits](#credits)
 - [Resources](#resources)
@@ -35,6 +35,24 @@ Or:
 3. Install gems with `$ bundle install`
 4. Run Jekyll with `$ bundle exec jekyll serve`
 5. Have fun!
+
+### Using Docker
+
+- Docker Installation guide can be found here: https://docs.docker.com/engine/installation
+
+You can start the site by browsing to project directory and running `docker-compose up`. You should see the following:
+
+```bash
+simpol-theme | Configuration file: /srv/jekyll/_config.yml
+simpol-theme |             Source: /srv/jekyll
+simpol-theme |        Destination: /srv/jekyll/_site
+simpol-theme |  Incremental build: enabled
+simpol-theme |       Generating...
+simpol-theme |                     done in x.xxx seconds.
+simpol-theme |  Auto-regeneration: enabled for '/srv/jekyll'
+simpol-theme |     Server address: http://0.0.0.0:4000/
+simpol-theme |   Server running... press ctrl-c to stop.
+```
 
 ## Current Features
 

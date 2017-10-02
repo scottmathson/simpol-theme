@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  site:
+    container_name: simpol-theme
+    command: jekyll serve --watch --incremental
+    image: jekyll/jekyll:latest
+    volumes:
+      - $PWD:/srv/jekyll
+    ports:
+      - 4000:4000
