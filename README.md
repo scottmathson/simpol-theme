@@ -36,11 +36,13 @@ Or:
 4. Run Jekyll with `$ bundle exec jekyll serve`
 5. Have fun!
 
-### Using Docker
+### Run with Docker
 
 - Docker Installation guide can be found here: https://docs.docker.com/engine/installation
 
-You can start the site by browsing to project directory and running `docker-compose up`. You should see the following:
+You can start the site locally by browsing to the project's directory and running `docker-compose up`.
+
+You should see the following:
 
 ```bash
 simpol-theme | Configuration file: /srv/jekyll/_config.yml
