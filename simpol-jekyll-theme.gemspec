@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "simpol-jekyll-theme"
-  spec.version       = "1.0.4"
+  spec.version       = "1.0.5"
   spec.authors       = ["Scott Mathson"]
   spec.email         = ["simpol@scottmathson.com"]
 
   spec.summary       = %q{A minimal, clean, and open source Jekyll theme.}
-  spec.description   = "Simpol Jekyll Theme, a content writer's best friend. Setup a Jekyll blog and start writing, fast. Focus on the writing, the content."
+  spec.description   = "Simpol Jekyll Theme, a content writer's and minimalist's best friend. Setup a Jekyll blog and start writing, fast. Focus on the writing, the content."
   spec.homepage      = "https://simpoltheme.com"
   spec.license       = "ISC"
 
@@ -19,5 +19,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.1"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.2"
 
-  spec.add_development_dependency "bundler", "~> 1.14"
+  spec.add_development_dependency "bundler", "~> 1.16"
 end
